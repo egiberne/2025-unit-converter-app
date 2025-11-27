@@ -3,7 +3,7 @@
 Built a Unit Converter that converts measure to Imperial from Metric.
 
 
-# Requirements
+## Features
 
 - Generate all conversions when the user clicks "Convert" button
 - Round the numbers down to three decimal places
