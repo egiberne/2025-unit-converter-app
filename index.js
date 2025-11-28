@@ -25,7 +25,7 @@ convertBtn.addEventListener("click", function(){
     
     console.log(convertToFeet(measureElt.value))
     
-    displayConvertion(measureElt.value, lengthCvt)
+    displayConvertion(measureElt.value,lengthCvt)
     
 }
 
@@ -37,20 +37,34 @@ function convertToFeet(lengthMeter){//1 meter = 3.281 feet
     
     console.log(`${lengthMeter} meter > ${lengthFeet} feet`)
     
-    
-    return lengthFeet
+    return roundedNumber(lengthFeet)
 }
 
 
-function displayConvertion(measureMetric, element){
+function convertToMeter(lengthFeet){//1 meter = 3.281 feet
     
-    const ctf = convertToFeet(measureMetric)
+    const lengthMeter = (Number(lengthFeet) * 3.281)
+    
+    console.log(`${lengthFeet} feet > ${lengthMeter} meters`)
+    
+    return roundedNumber(lengthMeter)
+}
+
+
+function displayConvertion(measure, element){
+    
     
     element.innerHTML =`
     
-    ${measureMetric} meters = ${ctf} feet
+    ${measure} meters = ${convertToFeet(measure)} feet
+    |
+    ${measure} feet = ${convertToMeter(measure)} meters
     
     `
     
 }
 
+function roundedNumber(num){// three decimal 
+    
+    return Number(num).toFixed(3)
+}
