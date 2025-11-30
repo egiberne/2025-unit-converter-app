@@ -34,6 +34,8 @@ convertBtn.addEventListener("click", function(){
     
     displayConversion(measureElt.value,volumeCvt)
     
+    displayConversion(measureElt.value,massCvt)
+    
 }
 
 ) 
@@ -43,7 +45,7 @@ function convertToFeet(lengthMeter){//1 meter = 3.281 feet
     
     const lengthFeet = (Number(lengthMeter) / 3.281)
     
-    console.log(`${lengthMeter} meters = ${lengthFeet} feet`)
+    console.log( `Meters to Feet : ${lengthMeter} meters = ${lengthFeet} feet`)
     
     return roundedNumber(lengthFeet)
 }
@@ -53,7 +55,7 @@ function convertToMeter(lengthFeet){//1 meter = 3.281 feet
     
     const lengthMeter = (Number(lengthFeet) * 3.281)
     
-    console.log(`${lengthFeet} feet = ${lengthMeter} meters`)
+    console.log(`Feet to Meters :${lengthFeet} feet = ${lengthMeter} meters`)
     
     return roundedNumber(lengthMeter)
 }
@@ -64,7 +66,7 @@ function convertToGallons(volumeLiter){//1 liter = 0.264 gallon
     
     const volumeGallon = (Number(volumeLiter) / 0.264)
     
-    console.log(`${volumeLiter} liters = ${volumeGallon} gallons`)
+    console.log(`Liters to Gallons : ${volumeLiter} liters = ${volumeGallon} gallons`)
     
     return roundedNumber(volumeLiter)
 }
@@ -74,9 +76,30 @@ function convertToLiter(volumeGallon){//1 liter = 0.264 gallon
     
     const volumeLiter = (Number(volumeGallon) * 0.264)
     
-    console.log(`${volumeGallon} gallons = ${volumeLiter} liters`)
+    console.log(`Gallons to Liters : ${volumeGallon} gallons = ${volumeLiter} liters`)
     
     return roundedNumber(volumeGallon)
+}
+
+// Kilograms to Pounds
+function convertToPound(massKilogram){//1 kilogram = 2.204 pound
+    
+    const massPound = (Number(massKilogram) /  2.204)
+    
+    console.log(`Kilograms to Pounds : ${massKilogram} kilograms  = ${massPound} pounds`)
+    
+    return roundedNumber(massPound)
+}
+
+
+// Pounds to Kilograms
+function convertToKilogram(massPound){//1 kilogram = 2.204 pound
+    
+    const  massKilogram  = (Number(massPound) *  2.204)
+    
+    console.log(`Poundss to Kilograms : ${massPound} pounds = ${massKilogram} kilograms`)
+    
+    return roundedNumber(massKilogram)
 }
 
 
