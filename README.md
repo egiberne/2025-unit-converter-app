@@ -1,16 +1,16 @@
 # Unit Converter App ⚖️
 _A simple tool to convert measurements from Metric to Imperial._
 
-## ✨ Built For
+## ✨ Built To
 - Convert values from Metric to Imperial with a single click  
 - Display all relevant conversions at once  
 - Round results to three decimal places for clarity  
 
 ## 🛠️ Built With
-Built with core front-end technologies:
-- [x] **HTML** – structure  
-- [x] **CSS** – styling  
-- [x] **JavaScript** – logic  
+Front-end technologies:
+- [x] **HTML** 
+- [x] **CSS** 
+- [x] **JavaScript** 
 
 ## 📚 Build Notes
 This project demonstrates key JavaScript techniques:
@@ -24,8 +24,10 @@ This project demonstrates key JavaScript techniques:
 ## Demo
 
 ### Preview
+_... coming soon_
 
 ### Live
+_... coming soon_
 
 ## Status
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
