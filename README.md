@@ -8,9 +8,11 @@ _A simple tool to convert measurements from Metric to Imperial._
 
 ## 🛠️ Built With
 Front-end technologies:
-- [x] **HTML** 
-- [x] **CSS** 
-- [x] **JavaScript** 
+|Item|Description|
+|----|-----|
+|Core Tools|HTML, CSS, JS|
+|Dev Tools|VS Code|
+|Test Tools| Web Browser|
 
 ## 📚 Build Notes
 This project demonstrates key JavaScript techniques:
