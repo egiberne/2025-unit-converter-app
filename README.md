@@ -23,12 +23,12 @@ Here the JavaScript concepts
 - [x] Functions for modular code  
 - [x] Template strings for dynamic output  
 
-## Demo
+## 📺Demo
 
 ### 🔍 Preview
 _... coming soon_
 
-### 🌐 Live
+### 🎮 Live
 _... coming soon_
 
 ## Status
