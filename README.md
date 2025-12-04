@@ -7,9 +7,10 @@ _A simple tool to convert measurements from Metric to Imperial._
 - Round results to three decimal places for clarity  
 
 ## 🛠️ Built With
-Here are Front-end technologies
+Here are technologies
 |Item|Description|
 |----|-----|
+|Stack|Front-end|
 |Language|HTML, CSS, JS|
 |Editor|VS Code|
 |Testing| Web Browser|
