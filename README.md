@@ -7,15 +7,15 @@ _A simple tool to convert measurements from Metric to Imperial._
 - Round results to three decimal places for clarity  
 
 ## 🛠️ Built With
-Front-end technologies:
+Here are Front-end technologies
 |Item|Description|
 |----|-----|
 |Core Tools|HTML, CSS, JS|
 |Dev Tools|VS Code|
 |Test Tools| Web Browser|
 
-## 📚 Build Notes
-This project demonstrates key JavaScript techniques:
+## 📚 Built On
+Here the JavaScript concepts
 - [x] `const` declarations  
 - [x] `addEventListener()` for interactivity  
 - [x] DOM manipulation with `innerHTML`  
@@ -25,10 +25,10 @@ This project demonstrates key JavaScript techniques:
 
 ## Demo
 
-### Preview
+### 🔍 Preview
 _... coming soon_
 
-### Live
+### 🌐 Live
 _... coming soon_
 
 ## Status
