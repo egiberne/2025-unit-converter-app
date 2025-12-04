@@ -10,9 +10,9 @@ _A simple tool to convert measurements from Metric to Imperial._
 Here are Front-end technologies
 |Item|Description|
 |----|-----|
-|Core Tools|HTML, CSS, JS|
-|Dev Tools|VS Code|
-|Test Tools| Web Browser|
+|Language|HTML, CSS, JS|
+|Editor|VS Code|
+|Testing| Web Browser|
 
 ## 📚 Built On
 Here the JavaScript concepts
