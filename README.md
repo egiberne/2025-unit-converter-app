@@ -1,27 +1,36 @@
-# Summary
+# Unit Converter App ⚖️
+_A simple tool to convert measurements from Metric to Imperial._
 
-Built a Unit Converter that converts measure to Imperial from Metric.
+## ✨ Built To
+- Convert values from Metric to Imperial with a single click  
+- Display all relevant conversions at once  
+- Round results to three decimal places for clarity  
 
+## 🛠️ Built With
+Here are technologies
+|Item|Description|
+|----|-----|
+|Stack|Front-end|
+|Language|HTML, CSS, JS|
+|Editor|VS Code|
+|Testing| Web Browser|
 
-## Features
+## 📚 Built On
+Here the JavaScript concepts
+- [x] `const` declarations  
+- [x] `addEventListener()` for interactivity  
+- [x] DOM manipulation with `innerHTML`  
+- [x] Handling user input via `input.value`  
+- [x] Functions for modular code  
+- [x] Template strings for dynamic output  
 
-- Generate all conversions when the user clicks "Convert" button
-- Round the numbers down to three decimal places
+## 📺Demo
 
-## Stack
+### 🔍 Preview
+_... coming soon_
 
-Using Front-End Dev 
-- [x] HTML
-- [x] CSS
-- [x] JS
+### 🎮 Live
+_... coming soon_
 
-## Recap
-
-Here are the concept used:
-
-- [x] const 
-- [x] addEventlistener()
-- [x] innerHTML
-- [x] input.value
-- [x] function 
-- [x] template strings
+## Status
+![Status](https://img.shields.io/badge/status-active-brightgreen)
