@@ -30,15 +30,41 @@ convertBtn.addEventListener("click", function(){
     
     console.log(convertToFeet(measureElt.value))
     
-    displayConversion(measureElt.value,lengthCvt)
+    displayConversion(measureElt.value,lengthCvt,"length")
     
-    displayConversion(measureElt.value,volumeCvt)
+    displayConversion(measureElt.value,volumeCvt,"volume")
     
-    displayConversion(measureElt.value,massCvt)
+    displayConversion(measureElt.value,massCvt,"mass")
     
 }
 
 ) 
+
+/*
+// Refactor
+function convertTo(unit, mesure){
+
+ if(unit==="meter"){ //Meters to Feet ;1 meter = 3.281 feet
+    
+    const lengthFeet = (Number(mesure) / 3.281)
+    
+    console.log( `Meters to Feet : ${mesure} meters = ${lengthFeet} feet`)
+    
+    return roundedNumber(lengthFeet)
+    
+    } else if(feet==="feet"){ // Feet to Meters ;1 meter = 3.281 feet
+        
+        const lengthMeter = (Number(mesure) * 3.281)
+    
+        console.log(`Feet to Meters :${mesure} feet = ${lengthMeter} meters`)
+    
+        return roundedNumber(lengthMeter)
+        
+    }
+}
+*/
+
+
 
 // Meters to Feet
 function convertToFeet(lengthMeter){//1 meter = 3.281 feet
@@ -62,13 +88,13 @@ function convertToMeter(lengthFeet){//1 meter = 3.281 feet
 
 
 // Liters to Gallons
-function convertToGallons(volumeLiter){//1 liter = 0.264 gallon
+function convertToGallon(volumeLiter){//1 liter = 0.264 gallon
     
     const volumeGallon = (Number(volumeLiter) / 0.264)
     
     console.log(`Liters to Gallons : ${volumeLiter} liters = ${volumeGallon} gallons`)
     
-    return roundedNumber(volumeLiter)
+    return roundedNumber(volumeGallon)
 }
 
 // Gallons to Liters
@@ -78,7 +104,7 @@ function convertToLiter(volumeGallon){//1 liter = 0.264 gallon
     
     console.log(`Gallons to Liters : ${volumeGallon} gallons = ${volumeLiter} liters`)
     
-    return roundedNumber(volumeGallon)
+    return roundedNumber(volumeLiter)
 }
 
 // Kilograms to Pounds
@@ -92,29 +118,48 @@ function convertToPound(massKilogram){//1 kilogram = 2.204 pound
 }
 
 
-// Pounds to Kilograms
+// Poundss to Kilograms
 function convertToKilogram(massPound){//1 kilogram = 2.204 pound
     
     const  massKilogram  = (Number(massPound) *  2.204)
     
-    console.log(`Poundss to Kilograms : ${massPound} pounds = ${massKilogram} kilograms`)
+    console.log(`Pounds to Kilograms : ${massPound} pounds = ${massKilogram} kilograms`)
     
     return roundedNumber(massKilogram)
 }
 
 
-function displayConversion(measure, element){
+function displayConversion(measure, element, category){
+    
+    if(category==='length'){
+        element.innerHTML =`
+        
+        ${measure} meters = ${convertToFeet(measure)} feet
+        |
+        ${measure} feet = ${convertToMeter(measure)} meters
+        `
+    } else if(category==='volume'){
+        element.innerHTML =`
+        
+        ${measure} liters = ${convertToGallon(measure)} gallons
+        |
+        ${measure} gallons = ${convertToLiter(measure)} liters
+        `
+        } else {
+            element.innerHTML =`
+        
+        ${measure} kilograms = ${convertToPound(measure)} pounds
+        |
+        ${measure} pounds = ${convertToKilogram(measure)} kilograms
+        `
+            
+        }
+        
+        
+    }
     
     
-    element.innerHTML =`
-    
-    ${measure} meters = ${convertToFeet(measure)} feet
-    |
-    ${measure} feet = ${convertToMeter(measure)} meters
-    
-    `
-    
-}
+
 
 function roundedNumber(num){// three decimal 
     
